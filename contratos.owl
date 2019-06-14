@@ -1,0 +1,199 @@
+@prefix : <http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26> .
+
+<http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#eAdjudicanteDe
+:eAdjudicanteDe rdf:type owl:ObjectProperty ;
+                owl:inverseOf :entidadeAdjudicante ;
+                rdfs:domain :Entidade ;
+                rdfs:range :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#eAdjudicatariaDe
+:eAdjudicatariaDe rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :entidadeAdjudicataria ;
+                  rdfs:domain :Entidade ;
+                  rdfs:range :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#entidadeAdjudicante
+:entidadeAdjudicante rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Contrato ;
+                     rdfs:range :Entidade .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#entidadeAdjudicataria
+:entidadeAdjudicataria rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Contrato ;
+                       rdfs:range :Entidade .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#causasAlteracoesPrazo
+:causasAlteracoesPrazo rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Contrato ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#causasAlteracoesPreco
+:causasAlteracoesPreco rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Contrato ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#cpv
+:cpv rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Contrato ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#dataCelebracaoContrato
+:dataCelebracaoContrato rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Contrato ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#dataFechoContrato
+:dataFechoContrato rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Contrato ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#dataPublicacao
+:dataPublicacao rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Contrato ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#descricaoAcordoQuadro
+:descricaoAcordoQuadro rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Contrato ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#estado
+:estado rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Contrato ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#fundamentacao
+:fundamentacao rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Contrato ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#localExecucao
+:localExecucao rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Contrato ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#numeroRegistoAcordoQuadro
+:numeroRegistoAcordoQuadro rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :Contrato ;
+                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#objetoContrato
+:objetoContrato rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Contrato ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#outrosDesc
+:outrosDesc rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Outros ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#prazoExecucao
+:prazoExecucao rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Contrato ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#precoContratual
+:precoContratual rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Contrato ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#precoTotalEfetivo
+:precoTotalEfetivo rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Contrato ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#procedimentoCentralizado
+:procedimentoCentralizado rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Contrato ;
+                          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#AquisicaoBensMoveis
+:AquisicaoBensMoveis rdf:type owl:Class ;
+                     rdfs:subClassOf :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#AquisicaoServicos
+:AquisicaoServicos rdf:type owl:Class ;
+                   rdfs:subClassOf :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#ConcessaoObrasPublicas
+:ConcessaoObrasPublicas rdf:type owl:Class ;
+                        rdfs:subClassOf :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#ConcessaoServicosPublicos
+:ConcessaoServicosPublicos rdf:type owl:Class ;
+                           rdfs:subClassOf :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#Contrato
+:Contrato rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#EmpreitadasObrasPublicas
+:EmpreitadasObrasPublicas rdf:type owl:Class ;
+                          rdfs:subClassOf :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#Entidade
+:Entidade rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#LocacaoBensMoveis
+:LocacaoBensMoveis rdf:type owl:Class ;
+                   rdfs:subClassOf :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#Outros
+:Outros rdf:type owl:Class ;
+        rdfs:subClassOf :Contrato .
+
+
+###  http://www.semanticweb.org/beggar/ontologies/2019/5/untitled-ontology-26#Sociedade
+:Sociedade rdf:type owl:Class ;
+           rdfs:subClassOf :Contrato .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
